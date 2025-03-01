@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="jeu.css">
+    <title>devinette</title>
+</head>
+<body onload="accueil()"><br><br><br>
+    <script src="devine.js"></script>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="welcome">Bienvenue <span id="nom"></span></h1>
+            </div>
+        </div><br><br>
+
+        <div class="row">
+            <div class="col-md-12"><h2>DEVINEZ LE NOMBRE SECRET POUR GAGNER</h2></div>
+        </div><br><br>
+        <div class="row">
+                
+            <div class="col-md-6">
+                <form action="">
+                    <div class="row-md-6"><input type="number" name="" id="nbre" min="0" max="100" class="form-control" required placeholder="Entrez le nombre secret" required></div>
+                    <div class="row-md-6">
+                        <input type="button" value="Valider" class="btn btn-info" onclick="game()" id="btn">
+                        <input type="button" value="Rejouer" class="btn btn-success" onclick="rejouer()" id="play" >
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3">
+                <p class="row-md-6">Nbre de coups restants: <span id="essais">5</span></p>
+                <p class="row-md-2">Nbre d'essais: <span id="again">0</span></p>
+                <p class="row-md-4"><h3 id="score"></h3></p>
+                
+            </div>
+
+        </div>
+      
+    </div>
+</body>
+</html>

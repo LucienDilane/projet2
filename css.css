@@ -1,0 +1,16 @@
+@keyframes defilement{
+    0%{background-position: 0% 0%;}
+    100%{background-position: 100% 100%;}
+}
+
+h1{
+    background: linear-gradient(to bottom right, rgb(0,0.5,0.5),rgb(88, 234, 16));
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: blue;
+    font-weight: bold;
+    animation: defilement 5s infinite;
+
+}
+
